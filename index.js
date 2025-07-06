@@ -66,7 +66,7 @@ app.post("/transcribed", async (req, res) => {
   } catch (err) {
     console.error("AI error:", err);
     res.send("<Response><Say>Sorry, I had an error processing your request.</Say></Response>");
-  }
+  } 
 });
 
 const PORT = process.env.PORT || 3000;
